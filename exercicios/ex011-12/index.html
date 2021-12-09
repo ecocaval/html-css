@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas, Audio e Videos</title>
+</head>
+<body>
+
+    <h1>Imagens Dinâmicas</h1>
+    <div>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem Flexivel">
+        </picture>
+    </div>
+    
+    <h1>Audio - Tipo 1</h1>
+    <div>
+        <audio src="midia/zemaru.mp3" controls></audio>
+    </div>
+
+    <!--Uma outra opção de código mais completo seria...-->
+
+    <h1>Audio - Tipo 2</h1>
+    <div>
+        <audio preload="metadata" controls loop>
+            <source src="midia/zemaru.mp3" type="audio/mpeg">
+            <source src="midia/zemaru.wav" type="audio/wav">
+            <source src="midia/zemaru.ogg" type="audio/ogg">
+            <p><a href="midia/zemaru.mp3"></a>Clique p/ baixar (seu browser não suporta este arquivo)</p>
+        </audio>
+    </div>
+
+    <h1>Videos</h1>
+    <h2>Inserindo videos hospedados locamente:</h2>
+    <div>
+        <video src="videos/space.m4v" width="560" controls></video>
+    </div>
+
+    <!--Uma outra opção de código mais completo seria...-->
+
+    <div>
+        <video width="560" poster="imagens/space.png" controls loop>
+            <source src="videos/space.m4v" type="video/mp4">
+            <source src="videos/space.mp4" type="video/mp4">
+            <p><a href="videos/space.m4v"></a>Clique p/ baixar (seu browser não suporta este arquivo)</p>
+        </video>
+    </div>
+
+    <h2>Inserindo videos do Youtube:</h2>
+    <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <h2>Inserindo videos do Vimeo:</h2>
+    <div>
+        <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
